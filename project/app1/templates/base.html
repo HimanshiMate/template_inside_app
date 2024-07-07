@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #nav{
+        background-color: rgb(0, 251, 255);
+        display: flex;
+        justify-content: center;
+      }
+      #nav a{
+        text-decoration: none;
+        padding: 20px;
+        font-size: 20px;
+        color: black;
+      }
+      #foot{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: rgb(221, 161, 249);
+      }
+      #foot ul li{
+        list-style-type: none;
+      }
+    </style>
+</head>
+<body>
+    <!-- ========Header section======== -->
+    <section id="nav">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+        <a href="#">PRODUCT</a>
+    </section>
+    {% block content %}
+
+
+    {% endblock %}
+    <!-- ==========Footer section======= -->
+    <section id="foot">
+        <div>
+            <h1>FOOTER CONTENT</h1>
+            <p>Lorem ipsum dolor sit amet consectetur <br>
+                adipisicing elit.A illo totam nostrum labore <br> 
+                voluptas obcaecati atque libero nulla sunt blanditiis <br>
+                porro adipisci,eaque recusandae error! Deserunt vitae <br>
+                officia reiciendis omnis!</p>
+        </div>
+        <div>
+            <ul>
+                <h1>LINKS</h1>
+                <li>link 1</li>
+                <li>link 2</li>
+                <li>link 3</li>
+                <li>link 4</li>
+            </ul>
+        </div>    
+        <div>
+            <ul>
+                <h1>LINKS</h1>
+                <li>link 1</li>
+                <li>link 2</li>
+                <li>link 3</li>
+                <li>link 4</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
